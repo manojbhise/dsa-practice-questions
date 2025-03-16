@@ -33,7 +33,7 @@ var isPalindrome = function (head) {
   let str2 = "";
   let node = head;
 
-  while (node !== null) {
+  while (node != null) {
     str1 = str1 + node.value;
     str2 = node.value + str2;
     node = node.next;
