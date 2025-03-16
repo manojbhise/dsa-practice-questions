@@ -1,4 +1,7 @@
-const height = [0,1,0,2,1,0,1,3,2,1,2,1,1];
+// Given n non-negative integers representing an elevation map where the width of each bar is 1,
+// compute how much water it can trap after raining.
+
+const height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1, 1];
 // Expected output is 6
 // const height = [4, 2, 0, 3, 2, 5];
 // Expected output is 9
