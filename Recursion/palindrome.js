@@ -15,6 +15,14 @@ function palindrome(num) {
   return isPalindrome(num.toString());
 }
 
+function isPalindromeNew(num) {
+  return num < 1 ? false : num === +num.toString().split("").reverse().join("");
+}
+
 console.log("Is number a Palindrome:", palindrome(x));
 console.log("Is number a Palindrome:", palindrome(y));
 console.log("Is number a Palindrome:", palindrome(z));
+
+console.log("Is number a Palindrome:", isPalindromeNew(x));
+console.log("Is number a Palindrome:", isPalindromeNew(y));
+console.log("Is number a Palindrome:", isPalindromeNew(z));
