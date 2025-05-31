@@ -24,15 +24,19 @@ Input: (s3 = "A"), (numRows3 = 1);
 // Output: "A"
 
 const zigZagConversion = (str, numRows) => {
-  const arr = new Array(numRows).fill("");
+  if (numRows === 1) return str;
+
   let k = 0;
   let toggle = true;
+  const arr = new Array(numRows).fill("");
+
   for (let i = 0; i < str.length; i++) {
     arr[k] = arr[k] + str[i];
     if (toggle && k === arr.length - 1) toggle = !toggle;
     else if (!toggle && k === 0) toggle = !toggle;
     toggle ? k++ : k--;
   }
+
   return arr.join("");
 };
 
